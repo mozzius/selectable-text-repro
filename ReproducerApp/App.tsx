@@ -33,6 +33,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   return (
     <View style={styles.sectionContainer}>
       <Text
+        selectable
         style={[
           styles.sectionTitle,
           {
@@ -42,6 +43,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
         {title}
       </Text>
       <Text
+        selectable
         style={[
           styles.sectionDescription,
           {
